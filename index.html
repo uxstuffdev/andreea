@@ -1,746 +1,1984 @@
 <!DOCTYPE html>
 <html lang="ro">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Candidatul Dorit — Treci de la „aplic și aștept" la „aleg dintre oferte"</title>
-<meta name="description" content="Pregătire de carieră, CV și interviu de la cineva care a stat de cealaltă parte a mesei: 7+ ani în recrutare, sute de interviuri conduse. Online, fără judecată." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
-<style>
-  :root{
-    --cream:#F9F9F7;
-    --paper:#FFFFFF;
-    --ink:#242622;
-    --body:#3D403A;
-    --body-soft:#5C6157;
-    --muted:#94998F;
-    --line:#E5E7E0;
-    --line-strong:#D0D2C7;
-    --sage:#5C7A63; /* Muted Green */
-    --sage-deep:#787D71;
-    --sage-soft:#EDF0E9;
-    --sun:#E7B85C; /* Muted Tan */
-    --sun-soft:#F3F1ED;
-    --shadow:0 1px 2px rgba(45,41,36,.04), 0 14px 40px -20px rgba(45,41,36,.12);
-    --shadow-lg:0 40px 80px -30px rgba(45,41,36,.22);
-    --r:20px;
-    --r-lg:28px;
-    --maxw:1140px;
-  }
-
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth;scroll-padding-top:92px}
-  a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{
-    outline:3px solid var(--sage);outline-offset:2px;border-radius:8px}
-  .skip-link{position:absolute;left:50%;top:-60px;transform:translateX(-50%);z-index:200;
-    background:var(--sage);color:#fff;padding:.7rem 1.2rem;border-radius:0 0 12px 12px;
-    font-weight:600;font-size:.9rem;transition:top .2s}
-  .skip-link:focus{top:0}
-  body{
-    font-family:'General Sans',system-ui,-apple-system,sans-serif;
-    color:var(--body);
-    background:var(--cream);
-    line-height:1.62;
-    -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
-  }
-  h1,h2,h3,h4{font-family:'Playfair Display',Georgia,'serif';color:var(--ink);font-weight:600;line-height:1.12;letter-spacing:-.02em}
-  a{color:inherit;text-decoration:none}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
-  .section{padding:5.5rem 0}
-  .accent{color:var(--sage)}
-  .eyebrow{display:inline-flex;align-items:center;gap:.55rem;font-size:.8rem;font-weight:600;
-    letter-spacing:.02em;color:var(--sage-deep);background:var(--sage-soft);
-    border-radius:999px;padding:.45rem 1rem;margin-bottom:1.25rem}
-  .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--sun)}
-  .lead{font-size:1.18rem;color:var(--body-soft);max-width:62ch}
-  .kicker{font-size:.82rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:.7rem}
-
-  /* ---------- buttons ---------- */
-  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
-    font-weight:600;font-size:.98rem;font-family:inherit;
-    padding:.9rem 1.6rem;border-radius:999px;cursor:pointer;border:1.5px solid transparent;
-    transition:transform .25s cubic-bezier(.2,.7,.2,1), box-shadow .25s, background .25s, border-color .25s;
-    will-change:transform}
-  .btn:active{transform:translateY(1px) scale(.99)}
-  .btn-primary{background:var(--sage);color:#fff}
-  .btn-primary:hover{transform:translateY(-2px);background:var(--sage-deep);box-shadow:0 18px 34px -16px rgba(140,150,110,.5)}
-  .btn-dark{background:var(--ink);color:var(--cream)}
-  .btn-dark:hover{transform:translateY(-2px);box-shadow:0 18px 34px -16px rgba(45,41,36,.4)}
-  .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line-strong)}
-  .btn-ghost:hover{transform:translateY(-2px);border-color:var(--ink);background:var(--paper)}
-  .btn-lg{padding:1.05rem 2rem;font-size:1.05rem}
-  .arrow{transition:transform .25s}
-  .btn:hover .arrow{transform:translateX(3px)}
-
-  /* ---------- pills / chips ---------- */
-  .pill{display:inline-flex;align-items:center;gap:.5rem;border:1px solid var(--line-strong);
-    background:rgba(255,255,255,.6);border-radius:999px;padding:.5rem 1rem;font-size:.9rem;color:var(--sage-deep)}
-  .pill .dot{width:6px;height:6px;border-radius:50%;background:var(--sun)}
-
-  /* ---------- nav ---------- */
-  header.nav{position:sticky;top:0;z-index:50;backdrop-filter:saturate(140%) blur(10px);
-    background:rgba(255,255,255,.8);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s, padding .3s}
-  header.nav.scrolled{border-color:var(--line);box-shadow:0 4px 20px -12px rgba(36,38,34,.1)}
-  header.nav.scrolled .nav-inner{height:64px}
-  header.nav.scrolled .monogram{width:32px;height:32px;font-size:.9rem}
-  .nav-inner{display:flex;align-items:center;height:72px;gap:2rem;transition:height .3s}
-  .brand{display:flex;align-items:center;gap:.5rem;margin-right:auto}
-  .monogram{width:36px;height:36px;border-radius:50%;background:var(--sage);color:#fff;
-    display:grid;place-items:center;font-size:1.05rem;font-weight:600;transition:all .3s}
-  .brand span{display:flex;flex-direction:column}
-  .brand b{font-weight:600;font-size:1rem;display:block;line-height:1.1;color:var(--ink)}
-  .brand span span{font-size:.72rem;color:var(--muted);letter-spacing:.01em}
-  .nav-links{display:flex;align-items:center;gap:1.25rem}
-  .nav-links a.lnk{font-size:.88rem;font-weight:500;color:var(--body-soft);transition:color .2s;position:relative;padding:.3rem 0}
-  .nav-links a.lnk:hover{color:var(--ink)}
-  .nav-links a.lnk::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:1.5px;background:var(--sage);
-    transform:scaleX(0);transform-origin:right;transition:transform .3s cubic-bezier(.2,.7,.2,1)}
-  .nav-links a.lnk:hover::after{transform:scaleX(1);transform-origin:left}
-  .nav-cta{display:flex;align-items:center;gap:.5rem}
-  .menu-btn{display:none;background:none;border:1px solid var(--line-strong);border-radius:12px;
-    padding:.55rem .65rem;cursor:pointer;color:var(--ink);line-height:0}
-  .menu-btn svg{width:24px;height:24px;display:block}
-  .mobile-menu{position:fixed;inset:0;z-index:60;display:none}
-  .mobile-menu.open{display:block}
-  .mobile-menu .overlay{position:absolute;inset:0;background:rgba(45,41,36,.35);opacity:0;transition:opacity .3s}
-  .mobile-menu.open .overlay{opacity:1}
-  .mobile-panel{position:absolute;top:0;right:0;height:100%;width:min(84vw,360px);
-    background:var(--paper);box-shadow:var(--shadow-lg);padding:1.5rem 1.4rem;
-    display:flex;flex-direction:column;gap:.3rem;transform:translateX(100%);
-    transition:transform .35s cubic-bezier(.2,.7,.2,1);overflow-y:auto}
-  .mobile-menu.open .mobile-panel{transform:none}
-  .mobile-panel .close-row{display:flex;justify-content:flex-end;margin-bottom:.5rem}
-  .mobile-panel .close-btn{background:none;border:1px solid var(--line-strong);border-radius:12px;
-    padding:.5rem .6rem;cursor:pointer;color:var(--ink);line-height:0}
-  .mobile-panel a.m-lnk{font-size:1.12rem;color:var(--ink);font-weight:500;
-    padding:.85rem .4rem;border-bottom:1px solid var(--line)}
-  .mobile-panel .m-cta{margin-top:1.2rem;display:flex;flex-direction:column;gap:.7rem}
-  .mobile-panel .m-cta .btn{width:100%}
-  @media(max-width:1100px){
-    .nav-links{display:none}
-    .nav-cta .btn-ghost,.nav-cta .desktop-cta{display:none}
-    .menu-btn{display:inline-flex;align-items:center;justify-content:center}
-    .nav-inner{gap:1rem;height:64px}
-    .brand{margin-right:0}
-    header.nav.scrolled .nav-inner{height:64px}
-  }
-  @media(max-width:480px){
-    .nav-inner{height:64px}
-    .monogram{width:34px;height:34px;font-size:1rem}
-    .brand b{font-size:.92rem}
-    .brand span span{display:none}
-    .nav-cta .btn-primary{padding:.6rem 1.1rem;font-size:.88rem}
-    .nav-cta .btn-primary::after{content:'Aplică'}
-    .nav-cta .btn-primary .btn-text{display:none}
-    .nav-cta{gap:.5rem}
-  }
-
-  /* ---------- decorative blobs ---------- */
-  .blob{position:absolute;border-radius:42% 58% 62% 38% / 45% 45% 55% 55%;z-index:-1;filter:blur(.2px)}
-
-  /* ---------- hero ---------- */
-  .hero{position:relative;padding:4.5rem 0 4rem;overflow:hidden}
-  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:3.5rem;align-items:center}
-  .hero h1{font-size:clamp(2.4rem,5vw,3.7rem);margin:1.1rem 0 1.3rem;letter-spacing:-.03em}
-  .hero .quote{font-style:normal;color:var(--sage-deep)}
-  .hero-cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem}
-  .hero-proof{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:2.2rem}
-  .hero-rise{animation:rise .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i,0) * .1s)}
-  @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
-  .hero-visual{position:relative;}
-  .hero-card{background:rgba(255,255,255,0.7);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.5);
-    border-radius:var(--r-lg);padding:2.2rem;box-shadow:var(--shadow-lg);width:100%;max-width:420px;
-    display:flex;flex-direction:column;gap:1.4rem;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
-  .hero-card:hover{transform:translateY(-8px) rotate(1deg)}
-  .hc-row{display:flex;align-items:flex-start;gap:1.2rem}
-  .hc-icon{width:38px;height:38px;border-radius:12px;background:var(--sage-soft);color:var(--sage-deep);
-    display:grid;place-items:center;flex-shrink:0;font-weight:700;font-size:.9rem}
-  .hc-row b{display:block;color:var(--ink);font-size:1.05rem;line-height:1.2;margin-bottom:.2rem}
-  .hc-row span{font-size:.88rem;color:var(--body-soft);line-height:1.4}
-  .hc-row span span{display:block}
-
-  /* ---------- problems ---------- */
-  .prob-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2.5rem}
-  .prob{display:flex;gap:.9rem;background:var(--paper);border:1px solid var(--line);
-    border-radius:var(--r);padding:1.4rem 1.5rem;transition:transform .3s, box-shadow .3s}
-  .prob:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--sage-soft)}
-  .prob .x{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--sun-soft);
-    color:#9a6a16;display:grid;place-items:center;font-size:.9rem;font-weight:700;margin-top:.1rem}
-  .prob p{color:var(--body);font-size:.98rem}
-
-  /* ---------- about ---------- */
-  .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:3.5rem;align-items:center}
-  .about-portrait{position:relative}
-  .portrait-card{aspect-ratio:4/5;border-radius:var(--r-lg);background:var(--sage-soft);
-    border:1px solid var(--line);display:grid;place-items:center;overflow:hidden;box-shadow:var(--shadow)}
-  .portrait-mono{width:120px;height:120px;border-radius:50%;background:var(--sage);color:#fff;
-    display:grid;place-items:center;font-size:3rem;font-weight:600}
-  .about-body p{margin-bottom:1.1rem;color:var(--body)}
-  .pull{margin:1.6rem 0;padding:1.3rem 1.5rem;border-left:3px solid var(--sage);
-    background:var(--paper);border-radius:0 var(--r) var(--r) 0;color:var(--ink);font-size:1.05rem}
-  .chips{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.6rem}
-
-  /* ---------- program / stack ---------- */
-  .program{background:var(--paper)}
-  .stack{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2.5rem}
-  .mod{position:relative;display:flex;gap:1rem;background:var(--cream);border:1px solid var(--line);
-    border-radius:var(--r);padding:1.5rem;transition:transform .3s,box-shadow .3s,border-color .3s}
-  .mod:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
-  .mod.star{border-color:var(--sun);background:#FCF7EC}
-  .mod .num{flex-shrink:0;width:36px;height:36px;border-radius:11px;background:var(--sage-soft);
-    color:var(--sage-deep);display:grid;place-items:center;font-weight:600}
-  .mod.star .num{background:var(--sun-soft);color:#9a6a16}
-  .mod h4{font-size:1.05rem;margin-bottom:.3rem}
-  .mod p{font-size:.92rem;color:var(--body-soft);margin-bottom:.7rem}
-  .mod .val{font-size:.85rem;font-weight:600;color:var(--sage-deep)}
-  .star-tag{position:absolute;top:-10px;right:14px;background:var(--sun);color:#3a2a06;
-    font-size:.72rem;font-weight:700;padding:.25rem .7rem;border-radius:999px}
-  .bonus-head{margin:3rem 0 1.4rem;font-size:1.1rem;color:var(--ink);font-weight:600;display:flex;align-items:center;gap:.6rem}
-  .bonus-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
-  .bonus{display:flex;gap:.9rem;border:1px dashed var(--line-strong);border-radius:var(--r);padding:1.2rem 1.3rem;background:var(--cream)}
-  .bonus .plus{flex-shrink:0;width:30px;height:30px;border-radius:50%;background:var(--sage-soft);color:var(--sage-deep);display:grid;place-items:center;font-weight:700}
-  .bonus b{display:block;color:var(--ink);font-size:.95rem;margin-bottom:.2rem}
-  .bonus p{font-size:.88rem;color:var(--body-soft)}
-  .bonus .val{font-size:.82rem;font-weight:600;color:var(--sage-deep);margin-top:.4rem;display:block}
-  .value-bar{margin-top:2.5rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;
-    background:var(--ink);color:var(--cream);border-radius:var(--r-lg);padding:1.6rem 2rem}
-  .value-bar .vt{font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.6)}
-  .value-bar .nums{font-size:1.5rem;font-weight:600}
-  .value-bar .nums .old{text-decoration:line-through;color:rgba(255,255,255,.45);font-weight:400;margin-right:.6rem;font-size:1.1rem}
-  .value-bar .nums .new{color:var(--sun)}
-
-  /* ---------- guarantee ---------- */
-  .guarantee{display:flex;gap:1.3rem;align-items:flex-start;margin-top:1.6rem;
-    background:var(--sage-soft);border:1px solid #cfe0cf;border-radius:var(--r-lg);padding:1.8rem 2rem}
-  .guarantee .gi{flex-shrink:0;width:46px;height:46px;border-radius:14px;background:var(--sage);color:#fff;display:grid;place-items:center;font-size:1.3rem}
-  .guarantee h3{font-size:1.2rem;margin-bottom:.5rem}
-  .guarantee p{color:var(--body);font-size:.96rem;margin-bottom:.6rem}
-
-  /* ---------- roi ---------- */
-  .roi{background:var(--ink);color:var(--cream);text-align:center}
-  .roi h2{color:#fff;font-size:clamp(1.7rem,3.5vw,2.5rem);max-width:18ch;margin:0 auto 1rem}
-  .roi p{color:rgba(255,255,255,.7);max-width:54ch;margin:0 auto;font-size:1.1rem}
-
-  /* ---------- pricing ---------- */
-  .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-top:2.8rem;align-items:start}
-  .tier{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);
-    padding:2rem 1.8rem;transition:transform .3s,box-shadow .3s}
-  .tier:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
-  .tier.featured{border-color:var(--sage);box-shadow:var(--shadow-lg);transform:translateY(-8px)}
-  .tier.featured:hover{transform:translateY(-12px)}
-  .tier-tag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--sage);color:#fff;
-    font-size:.74rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:.35rem .9rem;border-radius:999px}
-  .tier h3{font-size:1.25rem;margin-bottom:.6rem}
-  .tier .price{font-size:1.9rem;font-weight:600;color:var(--ink);letter-spacing:-.02em}
-  .tier .price small{font-size:.85rem;font-weight:400;color:var(--muted);letter-spacing:0}
-  .tier .desc{color:var(--body-soft);font-size:.95rem;margin:.8rem 0 1.3rem}
-  .tier ul{list-style:none;display:flex;flex-direction:column;gap:.7rem;margin-bottom:1.6rem}
-  .tier li{display:flex;gap:.6rem;font-size:.94rem;color:var(--body)}
-  .tier li .ck{color:var(--sage);flex-shrink:0;font-weight:700}
-  .tier .btn{width:100%}
-  .scarcity{text-align:center;margin-top:2rem;color:var(--body-soft);font-size:.96rem;display:flex;align-items:center;justify-content:center;gap:.6rem}
-  .scarcity .dot{width:8px;height:8px;border-radius:50%;background:var(--sun);box-shadow:0 0 0 0 rgba(231,184,92,.6);animation:pulse 2.4s infinite}
-  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(231,184,92,.5)}70%{box-shadow:0 0 0 10px rgba(231,184,92,0)}100%{box-shadow:0 0 0 0 rgba(231,184,92,0)}}
-
-  /* ---------- testimonials ---------- */
-  .tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-top:2.5rem}
-  .tcard{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:1.7rem;display:flex;flex-direction:column;gap:1rem}
-  .stars{color:var(--sun);letter-spacing:.1em;font-size:.95rem}
-  .tcard p{color:var(--body);font-size:.96rem;flex:1}
-  .tperson{display:flex;align-items:center;gap:.7rem}
-  .tav{width:40px;height:40px;border-radius:50%;background:var(--sage-soft);color:var(--sage-deep);display:grid;place-items:center;font-weight:600}
-  .tperson b{display:block;color:var(--ink);font-size:.92rem}
-  .tperson span{font-size:.82rem;color:var(--muted)}
-  .disclaimer{text-align:center;margin-top:1.6rem;font-size:.82rem;color:var(--muted);font-style:italic}
-
-  /* ---------- lead magnet ---------- */
-  .lead-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;
-    background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);padding:3rem;position:relative;overflow:hidden}
-  .lead-grid ul{list-style:none;display:flex;flex-direction:column;gap:.8rem;margin-top:1.6rem}
-  .lead-grid li{display:flex;gap:.6rem;color:var(--body);font-size:.96rem}
-  .lead-grid li .ck{color:var(--sage);font-weight:700;flex-shrink:0}
-  .form{display:flex;flex-direction:column;gap:1rem}
-  .field{display:flex;flex-direction:column;gap:.4rem}
-  .field label{font-size:.88rem;font-weight:500;color:var(--ink)}
-  .field input{font-family:inherit;font-size:1rem;padding:.85rem 1rem;border-radius:12px;
-    border:1.5px solid var(--line-strong);background:var(--cream);color:var(--ink);transition:border-color .2s}
-  .field input:focus{outline:none;border-color:var(--sage)}
-  .form .note{font-size:.82rem;color:var(--muted);text-align:center}
-
-  /* ---------- faq ---------- */
-  .faq{max-width:760px;margin:2.5rem auto 0}
-  details{border-bottom:1px solid var(--line);padding:1.3rem 0}
-  details summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem;
-    font-weight:500;font-size:1.08rem;color:var(--ink)}
-  details summary::-webkit-details-marker{display:none}
-  details summary .chev{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--sage-soft);color:var(--sage-deep);
-    display:grid;place-items:center;transition:transform .3s;font-size:1.1rem;line-height:0}
-  details[open] summary .chev{transform:rotate(45deg)}
-  details p{margin-top:1rem;color:var(--body-soft);font-size:.98rem;max-width:64ch}
-
-  /* ---------- final cta ---------- */
-  .final{text-align:center}
-  .final-card{background:var(--sage);color:#fff;border-radius:var(--r-lg);padding:4rem 2rem;position:relative;overflow:hidden}
-  .final-card h2{color:#fff;font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:1rem}
-  .final-card p{color:rgba(255,255,255,.85);max-width:52ch;margin:0 auto 2rem;font-size:1.08rem}
-  .final-card .btn-ghost{color:#fff;border-color:rgba(255,255,255,.5)}
-  .final-card .btn-ghost:hover{background:rgba(255,255,255,.12);border-color:#fff}
-  .final-card .cta-row{display:flex;flex-wrap:wrap;gap:.9rem;justify-content:center}
-
-  /* ---------- footer ---------- */
-  footer.foot{padding:3rem 0 2.5rem;border-top:1px solid var(--line)}
-  .foot-inner{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1.5rem;align-items:center}
-  .foot-inner small{color:var(--muted);font-size:.86rem}
-
-  /* ---------- section heads ---------- */
-  .shead{max-width:60ch}
-  .shead h2{font-size:clamp(1.8rem,3.6vw,2.6rem);margin-bottom:1rem}
-
-  /* ---------- responsive ---------- */
-  @media(max-width:900px){
-    .section{padding:4rem 0}
-    .hero-grid,.about-grid,.lead-grid{grid-template-columns:1fr;gap:2.5rem}
-    .prob-grid,.stack,.bonus-grid,.tiers,.tgrid{grid-template-columns:1fr}
-    .about-portrait{max-width:380px}
-    .lead-grid{padding:2rem}
-  }
-  @media(max-width:600px){
-    .wrap{padding:0 18px}
-    .hero-cta .btn,.final-card .btn{width:100%}
-    .value-bar{flex-direction:column;align-items:flex-start;text-align:left}
-    .tier.featured{transform:none}
-    .tier.featured:hover{transform:translateY(-4px)}
-  }
-  @media(prefers-reduced-motion:reduce){
-    *{animation:none!important;transition:none!important}
-  }
-
-  /* ---------- whatsapp sticky ---------- */
-  .wa-sticky {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    z-index: 200;
-    width: 60px;
-    height: 60px;
-    background: #25D366;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 8px 24px rgba(37, 211, 102, .3);
-    transition: transform .3s cubic-bezier(.16,1,0.3,1), box-shadow .3s;
-  }
-  .wa-sticky:hover {
-    transform: scale(1.08) translateY(-4px);
-    box-shadow: 0 12px 30px rgba(37, 211, 102, .4);
-  }
-  .wa-sticky:active {
-    transform: scale(.95);
-  }
-  .wa-sticky svg {
-    width: 32px;
-    height: 32px;
-    fill: #fff;
-  }
-  @media(max-width: 600px) {
-    .wa-sticky {
-      bottom: 1.5rem;
-      right: 1.5rem;
-      width: 56px;
-      height: 56px;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Candidatul Dorit — Treci de la „aplic și aștept" la „aleg dintre oferte"</title>
+  <meta name="description"
+    content="Pregătire de carieră, CV și interviu de la cineva care a stat de cealaltă parte a mesei: 7+ ani în recrutare, sute de interviuri conduse. Online, fără judecată." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+  <style>
+    :root {
+      --cream: #F9F9F7;
+      --paper: #FFFFFF;
+      --ink: #242622;
+      --body: #3D403A;
+      --body-soft: #5C6157;
+      --muted: #94998F;
+      --line: #E5E7E0;
+      --line-strong: #D0D2C7;
+      --sage-orig: #5C7A63;
+      /* Muted Green */
+      --sage: #c19772;
+      /* Muted Green */
+      --sage-deep: #787D71;
+      --sage-soft: #EDF0E9;
+      --sun: #E7B85C;
+      /* Muted Tan */
+      --sun-soft: #F3F1ED;
+      --shadow: 0 1px 2px rgba(45, 41, 36, .04), 0 14px 40px -20px rgba(45, 41, 36, .12);
+      --shadow-lg: 0 40px 80px -30px rgba(45, 41, 36, .22);
+      --r: 20px;
+      --r-lg: 28px;
+      --maxw: 1140px;
     }
-  }
-</style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 92px
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid var(--sage);
+      outline-offset: 2px;
+      border-radius: 8px
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 50%;
+      top: -60px;
+      transform: translateX(-50%);
+      z-index: 200;
+      background: var(--sage);
+      color: #fff;
+      padding: .7rem 1.2rem;
+      border-radius: 0 0 12px 12px;
+      font-weight: 600;
+      font-size: .9rem;
+      transition: top .2s
+    }
+
+    .skip-link:focus {
+      top: 0
+    }
+
+    body {
+      font-family: 'General Sans', system-ui, -apple-system, sans-serif;
+      color: var(--body);
+      background: var(--cream);
+      line-height: 1.62;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: 'Playfair Display', Georgia, 'serif';
+      color: var(--ink);
+      font-weight: 600;
+      line-height: 1.12;
+      letter-spacing: -.02em
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 0 24px
+    }
+
+    .section {
+      padding: 5.5rem 0
+    }
+
+    .accent {
+      color: var(--sage)
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      font-size: .8rem;
+      font-weight: 600;
+      letter-spacing: .02em;
+      color: var(--sage-deep);
+      background: var(--sage-soft);
+      border-radius: 999px;
+      padding: .45rem 1rem;
+      margin-bottom: 1.25rem
+    }
+
+    .eyebrow .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--sun)
+    }
+
+    .lead {
+      font-size: 1.18rem;
+      color: var(--body-soft);
+      max-width: 62ch
+    }
+
+    .kicker {
+      font-size: .82rem;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: .7rem
+    }
+
+    /* ---------- buttons ---------- */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .55rem;
+      font-weight: 600;
+      font-size: .98rem;
+      font-family: inherit;
+      padding: .9rem 1.6rem;
+      border-radius: 999px;
+      cursor: pointer;
+      border: 1.5px solid transparent;
+      transition: transform .25s cubic-bezier(.2, .7, .2, 1), box-shadow .25s, background .25s, border-color .25s;
+      will-change: transform
+    }
+
+    .btn:active {
+      transform: translateY(1px) scale(.99)
+    }
+
+    .btn-primary {
+      background: var(--sage);
+      color: #fff
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      background: var(--sage-deep);
+      box-shadow: 0 18px 34px -16px rgba(140, 150, 110, .5)
+    }
+
+    .btn-dark {
+      background: var(--ink);
+      color: var(--cream)
+    }
+
+    .btn-dark:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 34px -16px rgba(45, 41, 36, .4)
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--ink);
+      border-color: var(--line-strong)
+    }
+
+    .btn-ghost:hover {
+      transform: translateY(-2px);
+      border-color: var(--ink);
+      background: var(--paper)
+    }
+
+    .btn-lg {
+      padding: 1.05rem 2rem;
+      font-size: 1.05rem
+    }
+
+    .arrow {
+      transition: transform .25s
+    }
+
+    .btn:hover .arrow {
+      transform: translateX(3px)
+    }
+
+    /* ---------- pills / chips ---------- */
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      border: 1px solid var(--line-strong);
+      background: rgba(255, 255, 255, .6);
+      border-radius: 999px;
+      padding: .5rem 1rem;
+      font-size: .9rem;
+      color: var(--sage-deep)
+    }
+
+    .pill .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--sun)
+    }
+
+    /* ---------- nav ---------- */
+    header.nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: saturate(140%) blur(10px);
+      background: rgba(255, 255, 255, .8);
+      border-bottom: 1px solid transparent;
+      transition: border-color .3s, box-shadow .3s, padding .3s
+    }
+
+    header.nav.scrolled {
+      border-color: var(--line);
+      box-shadow: 0 4px 20px -12px rgba(36, 38, 34, .1)
+    }
+
+    header.nav.scrolled .nav-inner {
+      height: 64px
+    }
+
+    header.nav.scrolled .monogram {
+      width: 32px;
+      height: 32px;
+      font-size: .9rem
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      height: 72px;
+      gap: 2rem;
+      transition: height .3s;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      margin-right: auto
+    }
+
+    .monogram {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--sage);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-size: 1.05rem;
+      font-weight: 600;
+      transition: all .3s
+    }
+
+    .brand span {
+      display: flex;
+      flex-direction: column
+    }
+
+    .brand b {
+      font-weight: 600;
+      font-size: 1rem;
+      display: block;
+      line-height: 1.1;
+      color: var(--ink)
+    }
+
+    .brand span span {
+      font-size: .72rem;
+      color: var(--muted);
+      letter-spacing: .01em
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem
+    }
+
+    .nav-links a.lnk {
+      font-size: .88rem;
+      font-weight: 500;
+      color: var(--body-soft);
+      transition: color .2s;
+      position: relative;
+      padding: .3rem 0
+    }
+
+    .nav-links a.lnk:hover {
+      color: var(--ink)
+    }
+
+    .nav-links a.lnk::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1.5px;
+      background: var(--sage);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform .3s cubic-bezier(.2, .7, .2, 1)
+    }
+
+    .nav-links a.lnk:hover::after {
+      transform: scaleX(1);
+      transform-origin: left
+    }
+
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: .5rem
+    }
+
+    .menu-btn {
+      display: none;
+      background: none;
+      border: 1px solid var(--line-strong);
+      border-radius: 12px;
+      padding: .55rem .65rem;
+      cursor: pointer;
+      color: var(--ink);
+      line-height: 0
+    }
+
+    .menu-btn svg {
+      width: 24px;
+      height: 24px;
+      display: block
+    }
+
+    .mobile-menu {
+      position: fixed;
+      inset: 0;
+      z-index: 60;
+      display: none
+    }
+
+    .mobile-menu.open {
+      display: block
+    }
+
+    .mobile-menu .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(45, 41, 36, .35);
+      opacity: 0;
+      transition: opacity .3s
+    }
+
+    .mobile-menu.open .overlay {
+      opacity: 1
+    }
+
+    .mobile-panel {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: min(84vw, 360px);
+      background: var(--paper);
+      box-shadow: var(--shadow-lg);
+      padding: 1.5rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: .3rem;
+      transform: translateX(100%);
+      transition: transform .35s cubic-bezier(.2, .7, .2, 1);
+      overflow-y: auto
+    }
+
+    .mobile-menu.open .mobile-panel {
+      transform: none
+    }
+
+    .mobile-panel .close-row {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: .5rem
+    }
+
+    .mobile-panel .close-btn {
+      background: none;
+      border: 1px solid var(--line-strong);
+      border-radius: 12px;
+      padding: .5rem .6rem;
+      cursor: pointer;
+      color: var(--ink);
+      line-height: 0
+    }
+
+    .mobile-panel a.m-lnk {
+      font-size: 1.12rem;
+      color: var(--ink);
+      font-weight: 500;
+      padding: .85rem .4rem;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .mobile-panel .m-cta {
+      margin-top: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: .7rem
+    }
+
+    .mobile-panel .m-cta .btn {
+      width: 100%
+    }
+
+    @media(max-width:1100px) {
+      .nav-links {
+        display: none
+      }
+
+      .nav-cta .btn-ghost,
+      .nav-cta .desktop-cta {
+        display: none
+      }
+
+      .menu-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center
+      }
+
+      .nav-inner {
+        gap: 1rem;
+        height: 64px
+      }
+
+      .brand {
+        margin-right: 0
+      }
+
+      header.nav.scrolled .nav-inner {
+        height: 64px
+      }
+    }
+
+    @media(max-width:480px) {
+      .nav-inner {
+        height: 64px
+      }
+
+      .monogram {
+        width: 34px;
+        height: 34px;
+        font-size: 1rem
+      }
+
+      .brand b {
+        font-size: .92rem
+      }
+
+      .brand span span {
+        display: none
+      }
+
+      .nav-cta .btn-primary {
+        padding: .6rem 1.1rem;
+        font-size: .88rem
+      }
+
+      .nav-cta .btn-primary::after {
+        content: 'Aplică'
+      }
+
+      .nav-cta .btn-primary .btn-text {
+        display: none
+      }
+
+      .nav-cta {
+        gap: .5rem
+      }
+    }
+
+    /* ---------- decorative blobs ---------- */
+    .blob {
+      position: absolute;
+      border-radius: 42% 58% 62% 38% / 45% 45% 55% 55%;
+      z-index: -1;
+      filter: blur(.2px)
+    }
+
+    /* ---------- hero ---------- */
+    .hero {
+      position: relative;
+      padding: 4.5rem 0 4rem;
+      overflow: hidden
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 3.5rem;
+      align-items: center
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 5vw, 3.7rem);
+      margin: 1.1rem 0 1.3rem;
+      letter-spacing: -.03em
+    }
+
+    .hero .quote {
+      font-style: normal;
+      color: var(--sage-deep)
+    }
+
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .9rem;
+      margin-top: 2rem
+    }
+
+    .hero-proof {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .7rem;
+      margin-top: 2.2rem
+    }
+
+    .hero-rise {
+      animation: rise .7s cubic-bezier(.2, .7, .2, 1) both;
+      animation-delay: calc(var(--i, 0) * .1s)
+    }
+
+    @keyframes rise {
+      from {
+        opacity: 0;
+        transform: translateY(16px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-card {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: var(--r-lg);
+      padding: 2.2rem;
+      box-shadow: var(--shadow-lg);
+      width: 100%;
+      max-width: 420px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+      transition: transform .5s cubic-bezier(.2, .7, .2, 1)
+    }
+
+    .hero-card:hover {
+      transform: translateY(-8px) rotate(1deg)
+    }
+
+    .hc-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.2rem
+    }
+
+    .hc-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      background: var(--sage-soft);
+      color: var(--sage-deep);
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      font-weight: 700;
+      font-size: .9rem
+    }
+
+    .hc-row b {
+      display: block;
+      color: var(--ink);
+      font-size: 1.05rem;
+      line-height: 1.2;
+      margin-bottom: .2rem
+    }
+
+    .hc-row span {
+      font-size: .88rem;
+      color: var(--body-soft);
+      line-height: 1.4
+    }
+
+    .hc-row span span {
+      display: block
+    }
+
+    /* ---------- problems ---------- */
+    .prob-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-top: 2.5rem
+    }
+
+    .prob {
+      display: flex;
+      gap: .9rem;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--r);
+      padding: 1.4rem 1.5rem;
+      transition: transform .3s, box-shadow .3s
+    }
+
+    .prob:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+      border-color: var(--sage-soft)
+    }
+
+    .prob .x {
+      flex-shrink: 0;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--sun-soft);
+      color: #9a6a16;
+      display: grid;
+      place-items: center;
+      font-size: .9rem;
+      font-weight: 700;
+      margin-top: .1rem
+    }
+
+    .prob p {
+      color: var(--body);
+      font-size: .98rem
+    }
+
+    /* ---------- about ---------- */
+    .about-grid {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 3.5rem;
+      align-items: center
+    }
+
+    .about-portrait {
+      position: relative
+    }
+
+    .portrait-card {
+      aspect-ratio: 4/5;
+      border-radius: var(--r-lg);
+      background: var(--sage-soft);
+      border: 1px solid var(--line);
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      box-shadow: var(--shadow)
+    }
+
+    .portrait-mono {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: var(--sage);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-size: 3rem;
+      font-weight: 600
+    }
+
+    .about-body p {
+      margin-bottom: 1.1rem;
+      color: var(--body)
+    }
+
+    .pull {
+      margin: 1.6rem 0;
+      padding: 1.3rem 1.5rem;
+      border-left: 3px solid var(--sage);
+      background: var(--paper);
+      border-radius: 0 var(--r) var(--r) 0;
+      color: var(--ink);
+      font-size: 1.05rem
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .6rem;
+      margin-top: 1.6rem
+    }
+
+    /* ---------- program / stack ---------- */
+    .program {
+      background: var(--paper)
+    }
+
+    .stack {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-top: 2.5rem
+    }
+
+    .mod {
+      position: relative;
+      display: flex;
+      gap: 1rem;
+      background: var(--cream);
+      border: 1px solid var(--line);
+      border-radius: var(--r);
+      padding: 1.5rem;
+      transition: transform .3s, box-shadow .3s, border-color .3s
+    }
+
+    .mod:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow)
+    }
+
+    .mod.star {
+      border-color: var(--sun);
+      background: #FCF7EC
+    }
+
+    .mod .num {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      border-radius: 11px;
+      background: var(--sage-soft);
+      color: var(--sage-deep);
+      display: grid;
+      place-items: center;
+      font-weight: 600
+    }
+
+    .mod.star .num {
+      background: var(--sun-soft);
+      color: #9a6a16
+    }
+
+    .mod h4 {
+      font-size: 1.05rem;
+      margin-bottom: .3rem
+    }
+
+    .mod p {
+      font-size: .92rem;
+      color: var(--body-soft);
+      margin-bottom: .7rem
+    }
+
+    .mod .val {
+      font-size: .85rem;
+      font-weight: 600;
+      color: var(--sage-deep)
+    }
+
+    .star-tag {
+      position: absolute;
+      top: -10px;
+      right: 14px;
+      background: var(--sun);
+      color: #3a2a06;
+      font-size: .72rem;
+      font-weight: 700;
+      padding: .25rem .7rem;
+      border-radius: 999px
+    }
+
+    .bonus-head {
+      margin: 3rem 0 1.4rem;
+      font-size: 1.1rem;
+      color: var(--ink);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: .6rem
+    }
+
+    .bonus-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem
+    }
+
+    .bonus {
+      display: flex;
+      gap: .9rem;
+      border: 1px dashed var(--line-strong);
+      border-radius: var(--r);
+      padding: 1.2rem 1.3rem;
+      background: var(--cream)
+    }
+
+    .bonus .plus {
+      flex-shrink: 0;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--sage-soft);
+      color: var(--sage-deep);
+      display: grid;
+      place-items: center;
+      font-weight: 700
+    }
+
+    .bonus b {
+      display: block;
+      color: var(--ink);
+      font-size: .95rem;
+      margin-bottom: .2rem
+    }
+
+    .bonus p {
+      font-size: .88rem;
+      color: var(--body-soft)
+    }
+
+    .bonus .val {
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--sage-deep);
+      margin-top: .4rem;
+      display: block
+    }
+
+    .value-bar {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      background: var(--ink);
+      color: var(--cream);
+      border-radius: var(--r-lg);
+      padding: 1.6rem 2rem
+    }
+
+    .value-bar .vt {
+      font-size: .85rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, .6)
+    }
+
+    .value-bar .nums {
+      font-size: 1.5rem;
+      font-weight: 600
+    }
+
+    .value-bar .nums .old {
+      text-decoration: line-through;
+      color: rgba(255, 255, 255, .45);
+      font-weight: 400;
+      margin-right: .6rem;
+      font-size: 1.1rem
+    }
+
+    .value-bar .nums .new {
+      color: var(--sun)
+    }
+
+    /* ---------- guarantee ---------- */
+    .guarantee {
+      display: flex;
+      gap: 1.3rem;
+      align-items: flex-start;
+      margin-top: 1.6rem;
+      background: var(--sage-soft);
+      border: 1px solid #cfe0cf;
+      border-radius: var(--r-lg);
+      padding: 1.8rem 2rem
+    }
+
+    .guarantee .gi {
+      flex-shrink: 0;
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      background: var(--sage);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-size: 1.3rem
+    }
+
+    .guarantee h3 {
+      font-size: 1.2rem;
+      margin-bottom: .5rem
+    }
+
+    .guarantee p {
+      color: var(--body);
+      font-size: .96rem;
+      margin-bottom: .6rem
+    }
+
+    /* ---------- roi ---------- */
+    .roi {
+      background: var(--ink);
+      color: var(--cream);
+      text-align: center
+    }
+
+    .roi h2 {
+      color: #fff;
+      font-size: clamp(1.7rem, 3.5vw, 2.5rem);
+      max-width: 18ch;
+      margin: 0 auto 1rem
+    }
+
+    .roi p {
+      color: rgba(255, 255, 255, .7);
+      max-width: 54ch;
+      margin: 0 auto;
+      font-size: 1.1rem
+    }
+
+    /* ---------- pricing ---------- */
+    .tiers {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 380px));
+      gap: 1.3rem;
+      margin-top: 2.8rem;
+      align-items: start;
+      justify-content: center
+    }
+
+    .tier {
+      position: relative;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--r-lg);
+      padding: 2rem 1.8rem;
+      transition: transform .3s, box-shadow .3s
+    }
+
+    .tier:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow)
+    }
+
+    .tier.featured {
+      border-color: var(--sage);
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-8px)
+    }
+
+    .tier.featured:hover {
+      transform: translateY(-12px)
+    }
+
+    .tier-tag {
+      position: absolute;
+      top: -13px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--sage);
+      color: #fff;
+      font-size: .74rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      padding: .35rem .9rem;
+      border-radius: 999px
+    }
+
+    .tier h3 {
+      font-size: 1.25rem;
+      margin-bottom: .6rem
+    }
+
+    .tier .price {
+      font-size: 1.9rem;
+      font-weight: 600;
+      color: var(--ink);
+      letter-spacing: -.02em
+    }
+
+    .tier .price small {
+      font-size: .85rem;
+      font-weight: 400;
+      color: var(--muted);
+      letter-spacing: 0
+    }
+
+    .tier .desc {
+      color: var(--body-soft);
+      font-size: .95rem;
+      margin: .8rem 0 1.3rem
+    }
+
+    .tier ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: .7rem;
+      margin-bottom: 1.6rem
+    }
+
+    .tier li {
+      display: flex;
+      gap: .6rem;
+      font-size: .94rem;
+      color: var(--body)
+    }
+
+    .tier li .ck {
+      color: var(--sage);
+      flex-shrink: 0;
+      font-weight: 700
+    }
+
+    .tier .btn {
+      width: 100%
+    }
+
+    .scarcity {
+      text-align: center;
+      margin-top: 2rem;
+      color: var(--body-soft);
+      font-size: .96rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .6rem
+    }
+
+    .scarcity .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--sun);
+      box-shadow: 0 0 0 0 rgba(231, 184, 92, .6);
+      animation: pulse 2.4s infinite
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(231, 184, 92, .5)
+      }
+
+      70% {
+        box-shadow: 0 0 0 10px rgba(231, 184, 92, 0)
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(231, 184, 92, 0)
+      }
+    }
+
+    /* ---------- testimonials ---------- */
+    .tgrid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.3rem;
+      margin-top: 2.5rem
+    }
+
+    .tcard {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--r);
+      padding: 1.7rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem
+    }
+
+    .stars {
+      color: var(--sun);
+      letter-spacing: .1em;
+      font-size: .95rem
+    }
+
+    .tcard p {
+      color: var(--body);
+      font-size: .96rem;
+      flex: 1
+    }
+
+    .tperson {
+      display: flex;
+      align-items: center;
+      gap: .7rem
+    }
+
+    .tav {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--sage-soft);
+      color: var(--sage-deep);
+      display: grid;
+      place-items: center;
+      font-weight: 600
+    }
+
+    .tperson b {
+      display: block;
+      color: var(--ink);
+      font-size: .92rem
+    }
+
+    .tperson span {
+      font-size: .82rem;
+      color: var(--muted)
+    }
+
+    .disclaimer {
+      text-align: center;
+      margin-top: 1.6rem;
+      font-size: .82rem;
+      color: var(--muted);
+      font-style: italic
+    }
+
+    /* ---------- lead magnet ---------- */
+    .lead-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--r-lg);
+      padding: 3rem;
+      position: relative;
+      overflow: hidden
+    }
+
+    .lead-grid ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: .8rem;
+      margin-top: 1.6rem
+    }
+
+    .lead-grid li {
+      display: flex;
+      gap: .6rem;
+      color: var(--body);
+      font-size: .96rem
+    }
+
+    .lead-grid li .ck {
+      color: var(--sage);
+      font-weight: 700;
+      flex-shrink: 0
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: .4rem
+    }
+
+    .field label {
+      font-size: .88rem;
+      font-weight: 500;
+      color: var(--ink)
+    }
+
+    .field input {
+      font-family: inherit;
+      font-size: 1rem;
+      padding: .85rem 1rem;
+      border-radius: 12px;
+      border: 1.5px solid var(--line-strong);
+      background: var(--cream);
+      color: var(--ink);
+      transition: border-color .2s
+    }
+
+    .field input:focus {
+      outline: none;
+      border-color: var(--sage)
+    }
+
+    .form .note {
+      font-size: .82rem;
+      color: var(--muted);
+      text-align: center
+    }
+
+    /* ---------- faq ---------- */
+    .faq {
+      max-width: 760px;
+      margin: 2.5rem auto 0
+    }
+
+    details {
+      border-bottom: 1px solid var(--line);
+      padding: 1.3rem 0
+    }
+
+    details summary {
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      font-weight: 500;
+      font-size: 1.08rem;
+      color: var(--ink)
+    }
+
+    details summary::-webkit-details-marker {
+      display: none
+    }
+
+    details summary .chev {
+      flex-shrink: 0;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--sage-soft);
+      color: var(--sage-deep);
+      display: grid;
+      place-items: center;
+      transition: transform .3s;
+      font-size: 1.1rem;
+      line-height: 0
+    }
+
+    details[open] summary .chev {
+      transform: rotate(45deg)
+    }
+
+    details p {
+      margin-top: 1rem;
+      color: var(--body-soft);
+      font-size: .98rem;
+      max-width: 64ch
+    }
+
+    /* ---------- final cta ---------- */
+    .final {
+      text-align: center
+    }
+
+    .final-card {
+      background: var(--sage);
+      color: #fff;
+      border-radius: var(--r-lg);
+      padding: 4rem 2rem;
+      position: relative;
+      overflow: hidden
+    }
+
+    .final-card h2 {
+      color: #fff;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      margin-bottom: 1rem
+    }
+
+    .final-card p {
+      color: rgba(255, 255, 255, .85);
+      max-width: 52ch;
+      margin: 0 auto 2rem;
+      font-size: 1.08rem
+    }
+
+    .final-card .btn-ghost {
+      color: #fff;
+      border-color: rgba(255, 255, 255, .5)
+    }
+
+    .final-card .btn-ghost:hover {
+      background: rgba(255, 255, 255, .12);
+      border-color: #fff
+    }
+
+    .final-card .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .9rem;
+      justify-content: center
+    }
+
+    /* ---------- footer ---------- */
+    footer.foot {
+      padding: 3rem 0 2.5rem;
+      border-top: 1px solid var(--line)
+    }
+
+    .foot-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1.5rem;
+      align-items: center
+    }
+
+    .foot-inner small {
+      color: var(--muted);
+      font-size: .86rem
+    }
+
+    /* ---------- section heads ---------- */
+    .shead {
+      max-width: 60ch
+    }
+
+    .shead h2 {
+      font-size: clamp(1.8rem, 3.6vw, 2.6rem);
+      margin-bottom: 1rem
+    }
+
+    /* ---------- responsive ---------- */
+    @media(max-width:900px) {
+      .section {
+        padding: 4rem 0
+      }
+
+      .hero-grid,
+      .about-grid,
+      .lead-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem
+      }
+
+      .prob-grid,
+      .stack,
+      .bonus-grid,
+      .tiers,
+      .tgrid {
+        grid-template-columns: 1fr
+      }
+
+      .about-portrait {
+        max-width: 380px
+      }
+
+      .lead-grid {
+        padding: 2rem
+      }
+    }
+
+    @media(max-width:600px) {
+      .wrap {
+        padding: 0 18px
+      }
+
+      .hero-cta .btn,
+      .final-card .btn {
+        width: 100%
+      }
+
+      .value-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left
+      }
+
+      .tier.featured {
+        transform: none
+      }
+
+      .tier.featured:hover {
+        transform: translateY(-4px)
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+      * {
+        animation: none !important;
+        transition: none !important
+      }
+    }
+
+    /* ---------- whatsapp sticky ---------- */
+    .wa-sticky {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 200;
+      width: 60px;
+      height: 60px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, .3);
+      transition: transform .3s cubic-bezier(.16, 1, 0.3, 1), box-shadow .3s;
+    }
+
+    .wa-sticky:hover {
+      transform: scale(1.08) translateY(-4px);
+      box-shadow: 0 12px 30px rgba(37, 211, 102, .4);
+    }
+
+    .wa-sticky:active {
+      transform: scale(.95);
+    }
+
+    .wa-sticky svg {
+      width: 32px;
+      height: 32px;
+      fill: #fff;
+    }
+
+    @media(max-width: 600px) {
+      .wa-sticky {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 56px;
+        height: 56px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<a class="skip-link" href="#main">Sari la conținut</a>
+  <a class="skip-link" href="#main">Sari la conținut</a>
 
-<header class="nav" id="nav">
-  <div class="wrap nav-inner">
-    <a class="brand" href="#main" aria-label="Acasă">
-      <span class="monogram" aria-hidden="true">
-        <img src="andreea.jpg" style="width:100%;height:100%;object-fit:cover;border-radius: 50px;">
-      </span>
-      <span>
-        <b>Andreea Ghiță</b>
-        <span>Perspectiva celui care recrutează</span>
-      </span>
-    </a>
-    <nav class="nav-links" aria-label="Navigare principală">
-      <a class="lnk" href="#dificultati">De ce aici?</a>
-      <a class="lnk" href="#despre">Despre mine</a>
-      <a class="lnk" href="#program">Programul</a>
-      <a class="lnk" href="#preturi">Prețuri</a>
-      <a class="lnk" href="#resurse">Resurse</a>
-    </nav>
-    <div class="nav-cta">
-      <a class="btn btn-ghost desktop-cta" href="#resurse">Ghid gratuit</a>
-      <a class="btn btn-primary" href="#preturi"><span class="btn-text">Aplică pentru un loc</span></a>
-      <button class="menu-btn" id="menuOpen" aria-label="Deschide meniul" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      </button>
-    </div>
-  </div>
-</header>
-
-<div class="mobile-menu" id="mobileMenu">
-  <div class="overlay" data-close></div>
-  <div class="mobile-panel">
-    <div class="close-row">
-      <button class="close-btn" id="menuClose" aria-label="Închide meniul">
-        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
-      </button>
-    </div>
-    <a class="m-lnk" href="#dificultati" data-close>Dacă ești aici</a>
-    <a class="m-lnk" href="#despre" data-close>Despre mine</a>
-    <a class="m-lnk" href="#program" data-close>Programul</a>
-    <a class="m-lnk" href="#preturi" data-close>Prețuri</a>
-    <a class="m-lnk" href="#rezultate" data-close>Rezultate</a>
-    <a class="m-lnk" href="#resurse" data-close>Resurse gratuite</a>
-    <div class="m-cta">
-      <a class="btn btn-ghost" href="#resurse" data-close>Ghid gratuit</a>
-      <a class="btn btn-primary" href="#preturi" data-close>Aplică pentru un loc</a>
-    </div>
-  </div>
-</div>
-
-<main id="main">
-<!-- HERO -->
-<section class="hero">
-  <div class="blob" style="width:340px;height:340px;background:var(--sage-soft);top:-80px;right:-60px;opacity:.7"></div>
-  <div class="blob" style="width:200px;height:200px;background:var(--sun-soft);bottom:10px;left:-70px;opacity:.6"></div>
-  <div class="wrap hero-grid">
-    <div>
-      <h1 class="hero-rise" style="--i:1">Treci de la "aplic și aștept" la <span class="quote">"aleg ce ofertă e cea mai bună pentru mine".</span></h1>
-      <p class="lead hero-rise" style="--i:2">Majoritatea profesioniștilor competenți rămân invizibili pentru că nu stăpânesc regulile nescrise ale recrutării. Am condus sute de interviuri și am selectat mii de candidați. Te învăț să te poziționezi astfel încât tu să fii cel care alege oferta, nu cel care o așteaptă.</p>
-      <div class="hero-cta hero-rise" style="--i:3">
-        <a class="btn btn-primary btn-lg" href="#preturi">Vreau jobul pe care îl merit <span class="arrow">→</span></a>
-        <a class="btn btn-ghost btn-lg" href="#resurse">Ghid: Secretele recrutorilor</a>
-      </div>
-      <div class="hero-proof hero-rise" style="--i:4">
-        <span class="pill"><span class="dot"></span>Recrutare strategică</span>
-        <span class="pill"><span class="dot"></span>100% online, fără judecată</span>
-        <span class="pill"><span class="dot"></span>Confidențialitate absolută</span>
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#main" aria-label="Acasă">
+        <span class="monogram" aria-hidden="true">
+          <img src="andreea.jpg" style="width:100%;height:100%;object-fit:cover;border-radius: 50px;">
+        </span>
+        <span>
+          <b>Andreea Ghiță</b>
+          <span>Perspectiva celui care recrutează</span>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Navigare principală">
+        <a class="lnk" href="#dificultati">De ce aici?</a>
+        <a class="lnk" href="#despre">Despre mine</a>
+        <a class="lnk" href="#program">Programul</a>
+        <a class="lnk" href="#preturi">Prețuri</a>
+        <!-- <a class="lnk" href="#resurse">Resurse</a> -->
+      </nav>
+      <div class="nav-cta">
+        <!-- <a class="btn btn-ghost desktop-cta" href="#resurse">Ghid gratuit</a> -->
+        <a class="btn btn-primary" href="#preturi"><span class="btn-text">Aplică pentru un loc</span></a>
+        <button class="menu-btn" id="menuOpen" aria-label="Deschide meniul" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
       </div>
     </div>
-    <div class="hero-visual hero-rise" style="--i:3">
-      <div class="portrait-card">
-        <img src="andreea.jpg" style="width:100%;height:100%;object-fit:cover">
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="overlay" data-close></div>
+    <div class="mobile-panel">
+      <div class="close-row">
+        <button class="close-btn" id="menuClose" aria-label="Închide meniul">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
       </div>
-      <div class="hero-card">
-        <div class="hc-row"><span class="hc-icon">01</span><span><b>Direcție clară</b><span>știi exact ce rol țintești</span></span></div>
-        <div class="hc-row"><span class="hc-icon">02</span><span><b>CV care trece de filtre cu succes</b><span>proiectat să convingă</span></span></div>
-        <div class="hc-row"><span class="hc-icon">03</span><span><b>Nu mai îngheți în interviuri</b><span>psihologia din spatele fiecărei întrebări</span></span></div>
-        <div class="hc-row"><span class="hc-icon">04</span><span><b>Ofertă negociată în sus</b><span>fără să o pierzi</span></span></div>
+      <a class="m-lnk" href="#dificultati" data-close>Dacă ești aici</a>
+      <a class="m-lnk" href="#despre" data-close>Despre mine</a>
+      <a class="m-lnk" href="#program" data-close>Programul</a>
+      <a class="m-lnk" href="#preturi" data-close>Prețuri</a>
+      <a class="m-lnk" href="#rezultate" data-close>Rezultate</a>
+      <a class="m-lnk" href="#resurse" data-close>Resurse gratuite</a>
+      <div class="m-cta">
+        <a class="btn btn-ghost" href="#resurse" data-close>Ghid gratuit</a>
+        <a class="btn btn-primary" href="#preturi" data-close>Aplică pentru un loc</a>
       </div>
     </div>
   </div>
-</section>
 
-<!-- PROBLEMS -->
-<section class="section" id="dificultati">
-  <div class="wrap">
-    <div class="shead">
-      <p class="kicker">Realitatea dură a pieței muncii</p>
-      <h2>Ești un profesionist valoros, dar ești invizibil.</h2>
-      <p class="lead">Nu e vina ta. Nimeni nu te-a învățat ce caută, de fapt, omul din scaunul de recrutare.</p>
-      <br />
-      <p class="lead">Eu te învăț, pentru că eu sunt acel om.</p>
-    </div>
-    <div class="prob-grid">
-      <div class="prob"><span class="x">✕</span><p>Candidatura ta se pierde în masa celor 200 de aplicanți de pe platformele de profil.</p></div>
-      <div class="prob"><span class="x">✕</span><p>Simți că CV-ul tău este respins automat de algoritmi, înainte să fie citit de un om.</p></div>
-      <div class="prob"><span class="x">✕</span><p>La interviu, emoțiile îți umbresc competența și nu reușești să transmiți valoarea ta reală.</p></div>
-      <div class="prob"><span class="x">✕</span><p>Vrei o schimbare de domeniu, dar ești blocat în etichete profesionale vechi.</p></div>
-      <div class="prob"><span class="x">✕</span><p>Accepti pachete salariale sub media pieței pentru că negocierea te face să te simți inconfortabil.</p></div>
-      <div class="prob"><span class="x">✕</span><p>Timpul trece, încrederea în sine scade și cariera ta stagnează fără un motiv clar.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="section" id="despre">
-  <div class="wrap about-grid">
-    <div class="about-portrait">
-      <div class="blob" style="width:160px;height:160px;background:var(--sun-soft);top:-30px;left:-30px;opacity:.7"></div>
-      <div class="portrait-card">
-        <img src="andreea.jpg" style="width:100%;height:100%;object-fit:cover">
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="blob" style="width:340px;height:340px;background:var(--sage-soft);top:-80px;right:-60px;opacity:.7">
       </div>
-    </div>
-    <div class="about-body">
-      <p class="kicker">Expertiza din spatele cortinei</p>
-      <h2 style="font-size:clamp(1.7rem,3.4vw,2.4rem);margin-bottom:1.3rem">Știu exact ce se întâmplă în mintea celui care te evaluează.</h2>
-      <p>Cu peste 7 ani de experiență în recrutare corporativă și domenii nișate, am lucrat cu CV-uri, profiluri de LinkedIn și oameni reali, în industrii complexe, unde miza era mare și procesul, exigent.</p>
-      <p>Renunțăm împreună la tiparele care nu mai funcționează și lucrăm pe CV, pe LinkedIn și pe felul în care te prezinți la interviu. Știu exact ce să spui, cum să spui și cum să rămâi autentic fără să pierzi din profesionalism.</p>
-      <p>Nu aplici la întâmplare. Nu te vinzi sub valoarea ta. Înveți să te poziționezi corect și să intri în proces cu încredere.</p>
-      <div class="pull">"În primele minute ale unui interviu se decide aproape totul. Te învăț exact ce se întâmplă în acele minute, din scaunul celui care decide."</div>
-      <div class="chips">
-        <span class="pill"><span class="dot"></span>Psihologia deciziei</span>
-        <span class="pill"><span class="dot"></span>Inginerie de CV</span>
-        <span class="pill"><span class="dot"></span>Strategii de LinkedIn</span>
-        <span class="pill"><span class="dot"></span>Arta negocierii</span>
-        <span class="pill"><span class="dot"></span>Poziționare executivă</span>
+      <div class="blob" style="width:200px;height:200px;background:var(--sun-soft);bottom:10px;left:-70px;opacity:.6">
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- PROGRAM / STACK -->
-<section class="section program" id="program">
-  <div class="wrap">
-    <div class="shead">
-      <p class="kicker">Arhitectura succesului tău</p>
-      <h2>Sistemul „Candidatul Dorit”</h2>
-      <p class="lead">O metodologie riguroasă, rafinată prin ani de practică în recrutare, care transformă radical felul în care ești perceput pe piața muncii. Nu este un curs, este o reîncadrare strategică a întregii tale cariere.</p>
-    </div>
-    <div class="stack">
-      <div class="mod"><span class="num">1</span><div><h4>Busola de Carieră</h4><p>Sesiune 1:1 de poziționare: ce rol țintești, cum te diferențiezi, care e mesajul tău.</p><span class="val">Valoare 900 RON</span></div></div>
-      <div class="mod"><span class="num">2</span><div><h4>CV-ul care Trece de Filtre</h4><p>Rescriere alături de cineva care a respins mii de CV-uri — trece de ATS și de scanarea umană de 6 secunde.</p><span class="val">Valoare 1.200 RON</span></div></div>
-      <div class="mod"><span class="num">3</span><div><h4>Profil LinkedIn de Autoritate</h4><p>Îți optimizăm profilul ca recrutorii să vină ei la tine.</p><span class="val">Valoare 800 RON</span></div></div>
-      <div class="mod"><span class="num">4</span><div><h4>Harta Joburilor Ascunse</h4><p>Strategia de căutare, abordarea prin mesaj direct și cum obții recomandări — fără să te pierzi printre 200 de aplicanți.</p><span class="val">Valoare 700 RON</span></div></div>
-      <div class="mod star"><span class="star-tag">Elementul-cheie</span><span class="num">★</span><div><h4>Interviul pe care îl Câștigi</h4><p>Pregătire din scaunul intervievatorului: întrebările reale, ce evaluează ei de fapt, simulare de interviu + feedback.</p><span class="val">Valoare 1.500 RON</span></div></div>
-      <div class="mod"><span class="num">6</span><div><h4>Negocierea Ofertei</h4><p>Cum urci salariul fără să pierzi oferta — din partea celui care făcea ofertele.</p><span class="val">Valoare 900 RON</span></div></div>
-    </div>
-
-    <h3 class="bonus-head"><span class="hc-icon" style="width:30px;height:30px;border-radius:9px">+</span> Bonusuri incluse</h3>
-    <div class="bonus-grid">
-      <div class="bonus"><span class="plus">+</span><div><b>Banca de Răspunsuri</b><p>Răspunsuri-model la cele 50 de întrebări grele de interviu.</p><span class="val">Valoare 400 RON</span></div></div>
-      <div class="bonus"><span class="plus">+</span><div><b>Șablonul de DM care Primește Răspuns</b><p>Mesajele exacte prin care ajungi la recrutori și manageri.</p><span class="val">Valoare 300 RON</span></div></div>
-      <div class="bonus"><span class="plus">+</span><div><b>Checklist: Primele 90 de zile în noul job</b><p>Cum treci de perioada de probă și începi cu dreptul.</p><span class="val">Valoare 300 RON</span></div></div>
-      <div class="bonus"><span class="plus">+</span><div><b>Acces direct între ședințe (WhatsApp)</b><p>Sunt lângă tine pe tot parcursul căutării, nu doar în sesiuni.</p><span class="val">Valoare 1.000 RON</span></div></div>
-    </div>
-
-    <div class="value-bar">
-      <span class="vt">Valoare totală</span>
-      <span class="nums"><span class="old">8.000 RON</span><span class="new">2.997 RON</span></span>
-    </div>
-
-    <div class="guarantee">
-      <span class="gi" aria-hidden="true">✓</span>
-      <div>
-        <p class="kicker" style="margin-bottom:.3rem">Fără risc pentru tine</p>
-        <h3>Garanția Interviului</h3>
-        <p>Dacă parcurgi pașii din sistem și nu primești cel puțin 3 invitații la interviu în 90 de zile, continuăm să lucrăm împreună — gratuit — până le primești.</p>
-        <p>În plus: dacă după prima ședință simți că nu e pentru tine, îți returnez integral banii. Fără întrebări.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ROI -->
-<section class="section roi">
-  <div class="wrap">
-    <h2>Un job care iti aduce +1.000RON/lună înseamnă +12.000 RON pe an.</h2>
-    <p>Programul se plătește singur din prima lună de salariu nou și ai o carieră care arată ca tine.</p>
-  </div>
-</section>
-
-<!-- PRICING -->
-<section class="section" id="preturi">
-  <div class="wrap">
-    <div class="shead">
-      <p class="kicker">Cum lucrăm împreună</p>
-      <h2>Alege punctul de pornire potrivit pentru tine.</h2>
-    </div>
-    <div class="tiers">
-      <div class="tier">
-        <h3>Sesiune Strategică</h3>
-        <div class="price">497 RON</div>
-        <p class="desc">Analiză intensivă a profilului tău profesional și identificarea blocajelor imediate.</p>
-        <ul>
-          <li><span class="ck">✓</span>60 de minute de consultanță aplicată</li>
-          <li><span class="ck">✓</span>Audit detaliat al CV-ului și LinkedIn-ului</li>
-          <li><span class="ck">✓</span>Foaie de parcurs pentru auto-corecție</li>
-          <li><span class="ck">✓</span>Creditare sumă în programul complet</li>
-        </ul>
-        <a class="btn btn-ghost" href="#contact">Rezervă sesiunea</a>
-      </div>
-      <div class="tier featured">
-        <span class="tier-tag">Recomandat</span>
-        <h3>Candidatul Dorit</h3>
-        <div class="price">2.997 RON <small>/ sau 3 rate a 1.097 RON</small></div>
-        <p class="desc">Transformarea completă a prezenței tale în piața muncii. Sistemul de la A la Z.</p>
-        <ul>
-          <li><span class="ck">✓</span>Toate cele 6 module de strategie</li>
-          <li><span class="ck">✓</span>Pachetul complet de bonusuri incluse</li>
-          <li><span class="ck">✓</span>Suport prioritar pe WhatsApp</li>
-          <li><span class="ck">✓</span>Garanția de Performanță inclusă</li>
-        </ul>
-        <a class="btn btn-primary" href="#contact">Aplică pentru transformare <span class="arrow">→</span></a>
-      </div>
-      <div class="tier">
-        <h3>Parteneriat VIP</h3>
-        <div class="price">6.497 RON</div>
-        <p class="desc">Execuție asistată pas cu pas pentru profesioniștii care vor rezultate maxime, rapid.</p>
-        <ul>
-          <li><span class="ck">✓</span>Implementare directă pe fiecare etapă</li>
-          <li><span class="ck">✓</span>Analiza fiecărei oferte primite</li>
-          <li><span class="ck">✓</span>Simulări de interviu nelimitate</li>
-          <li><span class="ck">✓</span>Disponibilitate exclusivă (max. 2 locuri)</li>
-        </ul>
-        <a class="btn btn-ghost" href="#contact">Solicită detalii VIP</a>
-      </div>
-    </div>
-    <p class="scarcity"><span class="dot"></span>Accept un număr limitat de clienți lunar pentru a asigura calitatea și atenția necesară fiecărei cariere.</p>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="section" id="rezultate" style="background:var(--paper)">
-  <div class="wrap">
-    <div class="shead">
-      <p class="kicker">Ce spun oamenii cu care am lucrat</p>
-      <h2>Aceiași oameni. Alt rezultat.</h2>
-    </div>
-    <div class="tgrid">
-      <div class="tcard">
-        <span class="stars" aria-label="5 din 5 stele">★★★★★</span>
-        <p>„După luni de tăcere din partea angajatorilor, am obținut 4 invitații la interviu în primele trei săptămâni după optimizarea CV-ului și a profilului de LinkedIn. Strategia de poziționare a schimbat totul.”</p>
-        <div class="tperson"><span class="tav">MP</span><span><b>M. P.</b><span>Manager de Proiect</span></span></div>
-      </div>
-      <div class="tcard">
-        <span class="stars" aria-label="5 din 5 stele">★★★★★</span>
-        <p>Pregătirea pentru interviu mi-a oferit o încredere de nezdruncinat. Am știut să anticipez fiecare întrebare și să negociez un pachet salarial cu 20% mai mare decât oferta inițială.</p>
-        <div class="tperson"><span class="tav"><a href="https://www.linkedin.com/in/alex-okros/"><img src="alex.jpg" alt="Alex Okros" style="width:100%;height:100%;object-fit:cover;border-radius:50px;"></a></span><span><b><a href="https://www.linkedin.com/in/alex-okros/">Alex Okros</a></b><span><a href="https://www.linkedin.com/in/alex-okros/">Senior Product Engineer</a></span></span></div>
-      </div>
-      <div class="tcard">
-        <span class="stars" aria-label="5 din 5 stele">★★★★★</span>
-        <p>„Reorientarea profesională părea imposibilă până când am învățat cum să-mi 'traduc' experiența anterioară. Acum ocup un rol strategic într-un domeniu complet nou.”</p>
-        <div class="tperson"><span class="tav">RI</span><span><b>R. I.</b><span>Director de Operațiuni</span></span></div>
-      </div>
-    </div>
-    <p class="disclaimer">* Testimoniale demonstrative — de înlocuit cu mărturii reale (cu acordul clienților) înainte de publicare.</p>
-  </div>
-</section>
-
-<!-- LEAD MAGNET -->
-<section class="section" id="resurse">
-  <div class="wrap">
-    <div class="lead-grid">
-      <div class="blob" style="width:180px;height:180px;background:var(--sun-soft);bottom:-40px;right:-40px;opacity:.6"></div>
-      <div>
-        <p class="kicker">Resursă Strategică Gratuită</p>
-        <h2 style="font-size:clamp(1.5rem,3vw,2.1rem)">Anatomia celor 6 secunde: Ce observă recrutorii prima dată pe CV-ul tău</h2>
-        <p style="margin-top:1rem;color:var(--body-soft)">Un ghid concis care îți dezvăluie mecanismele psihologice din spatele triajului rapid al candidaturilor. Învață cum să eviți eliminarea automată și cum să captezi atenția decidentului instantaneu.</p>
-        <ul>
-          <li><span class="ck">✓</span>Analiza zonelor de interes maxim pe un CV</li>
-          <li><span class="ck">✓</span>Cele 3 erori critice care anulează orice competență</li>
-          <li><span class="ck">✓</span>Sistemul de formulare a realizărilor pentru impact imediat</li>
-        </ul>
-      </div>
-      <form class="form" id="leadForm" novalidate>
-        <div class="field">
-          <label for="lf-name">Cum te cheamă?</label>
-          <input id="lf-name" name="name" type="text" autocomplete="name" placeholder="Prenumele tău" required />
+      <div class="wrap hero-grid">
+        <div>
+          <h1 class="hero-rise" style="--i:1">Treci de la "aplic și aștept" la <span class="quote">"aleg ce ofertă e cea
+              mai bună pentru mine".</span></h1>
+          <p class="lead hero-rise" style="--i:2">Lucrăm <strong>1 la 1</strong>: îți construim CV-ul și pagina de
+            LinkedIn astfel încât să spună „da" angajatorului, și te pregătesc pentru interviu ca emoțiile să nu-ți mai
+            umbrească valoarea.</p>
+          <p class="lead hero-rise" style="--i:2; margin-top: 10px;">Plus <strong>5 zile de ghidare</strong>, cât
+            treci prin
+            proces.
+            Am condus sute de
+            interviuri.</p>
+          <p class="lead hero-rise" style="--i:2; margin-top: 10px;">Știu exact ce caută omul din scaunul de recrutare.
+          </p>
+          <div class="hero-cta hero-rise" style="--i:3">
+            <a class="btn btn-primary btn-lg" href="#preturi">Vreau jobul pe care îl merit <span
+                class="arrow">→</span></a>
+            <!-- <a class="btn btn-ghost btn-lg" href="#resurse">Ghid: Secretele recrutorilor</a> -->
+          </div>
+          <div class="hero-proof hero-rise" style="--i:4">
+            <span class="pill"><span class="dot"></span>Lucrăm 1 la 1</span>
+            <span class="pill"><span class="dot"></span>5 zile de ghidare după</span>
+            <span class="pill"><span class="dot"></span>100% online, fără judecată</span>
+          </div>
         </div>
-        <div class="field">
-          <label for="lf-email">Unde îți trimit ghidul?</label>
-          <input id="lf-email" name="email" type="email" autocomplete="email" placeholder="adresa@email.com" required />
+        <div class="hero-visual hero-rise" style="--i:3">
+          <div class="portrait-card">
+            <img src="andreea.jpg" style="width:100%;height:100%;object-fit:cover">
+          </div>
+          <div class="hero-card">
+            <div class="hc-row"><span class="hc-icon">01</span><span><b>Direcție clară</b><span>știi exact ce rol
+                  țintești</span></span></div>
+            <div class="hc-row"><span class="hc-icon">02</span><span><b>CV care trece de filtre cu
+                  succes</b><span>proiectat să convingă</span></span></div>
+            <div class="hc-row"><span class="hc-icon">03</span><span><b>Nu mai îngheți în interviuri</b><span>psihologia
+                  din spatele fiecărei întrebări</span></span></div>
+            <div class="hc-row"><span class="hc-icon">04</span><span><b>Ofertă negociată în sus</b><span>fără să o
+                  pierzi</span></span></div>
+          </div>
         </div>
-        <button class="btn btn-primary btn-lg" type="submit">Trimite-mi ghidul gratuit</button>
-        <p class="note">Fără spam. Te poți dezabona oricând.</p>
-      </form>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="section" id="faq">
-  <div class="wrap">
-    <div class="shead" style="margin:0 auto;text-align:center">
-      <p class="kicker">Întrebări frecvente</p>
-      <h2>Ce e bine să știi</h2>
-    </div>
-    <div class="faq">
-      <details>
-        <summary>Este eficientă strategia în cazul unei reconversii profesionale radicale? <span class="chev">+</span></summary>
-        <p>Absolut. Pilonul central al metodologiei noastre este reîncadrarea competențelor transferabile. Te învățăm cum să proiectezi experiența ta anterioară astfel încât să devină un atu major în noul domeniu, eliminând percepția de „lipsă de experiență”.</p>
-      </details>
-      <details>
-        <summary>Se adresează programul și profesioniștilor din segmentul de management? <span class="chev">+</span></summary>
-        <p>Da, majoritatea clienților noștri sunt profesioniști cu experiență medie și seniori sau manageri care urmăresc roluri de leadership. Strategiile de negociere și poziționare sunt adaptate pentru nivelul de complexitate al acestor poziții.</p>
-      </details>
-      <details>
-        <summary>Cum se desfășoară sesiunile de consultanță? <span class="chev">+</span></summary>
-        <p>Interacțiunea are loc exclusiv online, prin platforme securizate de videoconferință. Fiecare sesiune este structurată pe obiective clare și se finalizează cu un plan de acțiune imediată, adaptat ritmului tău profesional.</p>
-      </details>
-      <details>
-        <summary>Cum funcționează concret garanția de performanță? <span class="chev">+</span></summary>
-        <p>Suntem atât de siguri de eficacitatea sistemului încât, dacă după aplicarea riguroasă a tuturor pașilor nu obții rezultate concrete sub formă de interviuri, continuăm să te asistăm pro-bono. Succesul tău este singura noastră unitate de măsură.</p>
-      </details>
-    </div>
-  </div>
-</section>
-
-<!-- FINAL CTA -->
-<section class="section final" id="contact">
-  <div class="wrap">
-    <div class="final-card">
-      <div class="blob" style="width:260px;height:260px;background:rgba(255,255,255,.08);top:-60px;right:-40px"></div>
-      <h2>Primul pas poate fi un simplu mesaj.</h2>
-      <p>Scrie-mi unde te afli acum în căutarea ta. Îți răspund cu un prim pas concret.</p>
-      <div class="cta-row">
-        <a class="btn btn-dark btn-lg" href="mailto:contact@strategiedecariera.ro">Solicită o consultanță</a>
-        <a class="btn btn-ghost btn-lg" href="#resurse">Descarcă resursele gratuite</a>
       </div>
+    </section>
+
+    <!-- PROBLEMS -->
+    <section class="section" id="dificultati">
+      <div class="wrap">
+        <div class="shead">
+          <p class="kicker">Realitatea dură a pieței muncii</p>
+          <h2>Ești un profesionist valoros, dar ești invizibil.</h2>
+          <p class="lead">Nu e vina ta. Nimeni nu te-a învățat ce caută, de fapt, omul din scaunul de recrutare.</p>
+          <br />
+          <p class="lead">Eu te învăț, pentru că eu sunt acel om.</p>
+        </div>
+        <div class="prob-grid">
+          <div class="prob"><span class="x">✕</span>
+            <p>Cu zile înainte de interviu te apucă anxietatea: îți repeți răspunsuri în minte și tot simți că „o să te
+              blochezi".</p>
+          </div>
+          <div class="prob"><span class="x">✕</span>
+            <p>La interviu, emoțiile îți umbresc competența și nu reușești să transmiți valoarea ta reală.</p>
+          </div>
+          <div class="prob"><span class="x">✕</span>
+            <p>CV-ul tău nu spune ce caută angajatorul — e respins înainte să fie citit cu adevărat de un om.</p>
+          </div>
+          <div class="prob"><span class="x">✕</span>
+            <p>Profilul tău de LinkedIn nu te ajută: recrutorii trec pe lângă el în loc să te caute pe tine.</p>
+          </div>
+          <div class="prob"><span class="x">✕</span>
+            <p>Candidatura ta se pierde în masa celor 200 de aplicanți și nu primești niciun răspuns.</p>
+          </div>
+          <div class="prob"><span class="x">✕</span>
+            <p>Timpul trece, încrederea în sine scade și cariera ta stagnează fără un motiv clar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="despre">
+      <div class="wrap about-grid">
+        <div class="about-portrait">
+          <div class="blob" style="width:160px;height:160px;background:var(--sun-soft);top:-30px;left:-30px;opacity:.7">
+          </div>
+          <div class="portrait-card">
+            <img src="andreea.jpg" style="width:100%;height:100%;object-fit:cover">
+          </div>
+        </div>
+        <div class="about-body">
+          <p class="kicker">Expertiza din spatele cortinei</p>
+          <h2 style="font-size:clamp(1.7rem,3.4vw,2.4rem);margin-bottom:1.3rem">Știu exact ce se întâmplă în mintea
+            celui care te evaluează.</h2>
+          <p>Cu peste 7 ani de experiență în recrutare corporativă și domenii nișate, am lucrat cu CV-uri, profiluri de
+            LinkedIn și oameni reali, în industrii complexe, unde miza era mare și procesul, exigent.</p>
+          <p>Renunțăm împreună la tiparele care nu mai funcționează și lucrăm pe CV, pe LinkedIn și pe felul în care te
+            prezinți la interviu. Știu exact ce să spui, cum să spui și cum să rămâi autentic fără să pierzi din
+            profesionalism.</p>
+          <p>Nu aplici la întâmplare. Nu te vinzi sub valoarea ta. Înveți să te poziționezi corect și să intri în proces
+            cu încredere.</p>
+          <div class="pull">"În primele minute ale unui interviu se decide aproape totul. Te învăț exact ce se întâmplă
+            în acele minute, din scaunul celui care decide."</div>
+          <div class="chips">
+            <span class="pill"><span class="dot"></span>Psihologia deciziei</span>
+            <span class="pill"><span class="dot"></span>Inginerie de CV</span>
+            <span class="pill"><span class="dot"></span>Strategii de LinkedIn</span>
+            <span class="pill"><span class="dot"></span>Arta negocierii</span>
+            <span class="pill"><span class="dot"></span>Poziționare executivă</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAM / STACK -->
+    <section class="section program" id="program">
+      <div class="wrap">
+        <div class="shead">
+          <p class="kicker">Arhitectura succesului tău</p>
+          <h2>Sistemul „Candidatul Dorit”</h2>
+          <p class="lead">O metodologie riguroasă, rafinată prin ani de practică în recrutare, care transformă radical
+            felul în care ești perceput pe piața muncii. Nu este un curs, este o reîncadrare strategică a întregii tale
+            cariere.</p>
+        </div>
+        <div class="stack">
+          <div class="mod"><span class="num">1</span>
+            <div>
+              <h4>Busola de Carieră</h4>
+              <p>Sesiune 1:1 de poziționare: ce rol țintești, cum te diferențiezi, care e mesajul tău.</p><span
+                class="val">Valoare 199 RON</span>
+            </div>
+          </div>
+          <div class="mod"><span class="num">2</span>
+            <div>
+              <h4>CV-ul care Trece de Filtre</h4>
+              <p>Rescriere alături de cineva care a respins mii de CV-uri — trece de ATS și de scanarea umană de 6
+                secunde.</p><span class="val">Valoare 300 RON</span>
+            </div>
+          </div>
+          <div class="mod"><span class="num">3</span>
+            <div>
+              <h4>Profil LinkedIn de Autoritate</h4>
+              <p>Îți optimizăm profilul ca recrutorii să vină ei la tine.</p><span class="val">Valoare 200 RON</span>
+            </div>
+          </div>
+          <div class="mod"><span class="num">4</span>
+            <div>
+              <h4>Harta Joburilor Ascunse</h4>
+              <p>Strategia de căutare, abordarea prin mesaj direct și cum obții recomandări — fără să te pierzi printre
+                200 de aplicanți.</p><span class="val">Valoare 200 RON</span>
+            </div>
+          </div>
+          <div class="mod star"><span class="star-tag">Elementul-cheie</span><span class="num">★</span>
+            <div>
+              <h4>Interviul pe care îl Câștigi</h4>
+              <p>Pregătire din scaunul intervievatorului: întrebările reale, ce evaluează ei de fapt, simulare de
+                interviu + feedback.</p><span class="val">Valoare 350 RON</span>
+            </div>
+          </div>
+          <div class="mod"><span class="num">6</span>
+            <div>
+              <h4>Negocierea Ofertei</h4>
+              <p>Cum urci salariul fără să pierzi oferta — din partea celui care făcea ofertele.</p><span
+                class="val">Valoare 250 RON</span>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="bonus-head"><span class="hc-icon" style="width:30px;height:30px;border-radius:9px">+</span> Bonusuri
+          incluse</h3>
+        <div class="bonus-grid">
+          <div class="bonus"><span class="plus">+</span>
+            <div><b>Banca de Răspunsuri</b>
+              <p>Răspunsuri-model la cele 50 de întrebări grele de interviu.</p>
+            </div>
+          </div>
+          <div class="bonus"><span class="plus">+</span>
+            <div><b>Șablonul de DM care Primește Răspuns</b>
+              <p>Mesajele exacte prin care ajungi la recrutori și manageri.</p>
+            </div>
+          </div>
+          <div class="bonus"><span class="plus">+</span>
+            <div><b>Checklist: Primele 90 de zile în noul job</b>
+              <p>Cum treci de perioada de probă și începi cu dreptul.</p>
+            </div>
+          </div>
+          <div class="bonus"><span class="plus">+</span>
+            <div><b>5 zile de ghidare după ședință (WhatsApp)</b>
+              <p>Sunt lângă tine 5 zile după fiecare etapă — îmi scrii, îți răspund, ajustăm pe loc.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="value-bar">
+          <span class="vt">Valoare totală</span>
+          <span class="nums"><span class="new">1.499 RON</span></span>
+        </div>
+
+        <div class="guarantee">
+          <span class="gi" aria-hidden="true">✓</span>
+          <div>
+            <p class="kicker" style="margin-bottom:.3rem">Fără risc pentru tine</p>
+            <h3>Garanția Interviului</h3>
+            <p>Dacă parcurgi pașii din sistem și nu primești cel puțin 3 invitații la interviu în 90 de zile, continuăm
+              să lucrăm împreună — gratuit — până le primești.</p>
+            <p>În plus: dacă după prima ședință simți că nu e pentru tine, îți returnez integral banii. Fără întrebări.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROI -->
+    <section class="section roi">
+      <div class="wrap">
+        <h2>Un job care iti aduce +1.000RON/lună înseamnă +12.000 RON pe an.</h2>
+        <p>Programul se plătește singur din prima lună de salariu nou și ai o carieră care arată ca tine.</p>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section" id="preturi">
+      <div class="wrap">
+        <div class="shead">
+          <p class="kicker">Cum lucrăm împreună</p>
+          <h2>Alege punctul de pornire potrivit pentru tine.</h2>
+        </div>
+        <div class="tiers">
+          <div class="tier">
+            <h3>Sesiune Strategică 1 la 1</h3>
+            <div class="price">250 RON</div>
+            <p class="desc">Analiză intensivă a profilului tău profesional și identificarea blocajelor imediate.</p>
+            <ul>
+              <li><span class="ck">✓</span>50 de minute de consultanță 1 la 1</li>
+              <li><span class="ck">✓</span>Audit detaliat al CV-ului și LinkedIn-ului</li>
+              <li><span class="ck">✓</span>5 zile de ghidare pe WhatsApp după sesiune</li>
+              <li><span class="ck">✓</span>Creditare sumă în programul complet</li>
+            </ul>
+            <a class="btn btn-ghost" href="#contact">Rezervă sesiunea</a>
+          </div>
+          <div class="tier featured">
+            <span class="tier-tag">Recomandat</span>
+            <h3>Candidatul Dorit</h3>
+            <div class="price">1.499 RON <small>/ sau 3 rate a 500 RON</small></div>
+            <p class="desc">Transformarea completă a prezenței tale în piața muncii. Sistemul de la A la Z.</p>
+            <ul>
+              <li><span class="ck">✓</span>Ghidare 1 la 1 pe tot parcursul</li>
+              <li><span class="ck">✓</span>CV și LinkedIn construite pentru angajator</li>
+              <li><span class="ck">✓</span>Pregătire de interviu fără emoții care te blochează</li>
+              <li><span class="ck">✓</span>5 zile de suport pe WhatsApp după fiecare etapă</li>
+              <li><span class="ck">✓</span>Garanția de Performanță inclusă</li>
+            </ul>
+            <a class="btn btn-primary" href="#contact">Aplică pentru transformare <span class="arrow">→</span></a>
+          </div>
+        </div>
+        <p class="scarcity"><span class="dot"></span>Accept un număr limitat de clienți lunar pentru a asigura calitatea
+          și atenția necesară fiecărei cariere.</p>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section" id="rezultate" style="background:var(--paper)">
+      <div class="wrap">
+        <div class="shead">
+          <p class="kicker">Ce spun oamenii cu care am lucrat</p>
+          <h2>Aceiași oameni. Alt rezultat.</h2>
+        </div>
+        <div class="tgrid">
+          <div class="tcard">
+            <span class="stars" aria-label="5 din 5 stele">★★★★★</span>
+            <p>„După luni de tăcere din partea angajatorilor, am obținut 4 invitații la interviu în primele trei
+              săptămâni după optimizarea CV-ului și a profilului de LinkedIn. Strategia de poziționare a schimbat
+              totul.”</p>
+            <div class="tperson"><span class="tav">MP</span><span><b>M. P.</b><span>Manager de Proiect</span></span>
+            </div>
+          </div>
+          <div class="tcard">
+            <span class="stars" aria-label="5 din 5 stele">★★★★★</span>
+            <p>Pregătirea pentru interviu mi-a oferit o încredere de nezdruncinat. Am știut să anticipez fiecare
+              întrebare și să negociez un pachet salarial cu 20% mai mare decât oferta inițială.</p>
+            <div class="tperson"><span class="tav"><a href="https://www.linkedin.com/in/alex-okros/"><img src="alex.jpg"
+                    alt="Alex Okros"
+                    style="width:100%;height:100%;object-fit:cover;border-radius:50px;"></a></span><span><b><a
+                    href="https://www.linkedin.com/in/alex-okros/">Alex Okros</a></b><span><a
+                    href="https://www.linkedin.com/in/alex-okros/">Senior Product Engineer</a></span></span></div>
+          </div>
+          <div class="tcard">
+            <span class="stars" aria-label="5 din 5 stele">★★★★★</span>
+            <p>„Reorientarea profesională părea imposibilă până când am învățat cum să-mi 'traduc' experiența
+              anterioară. Acum ocup un rol strategic într-un domeniu complet nou.”</p>
+            <div class="tperson"><span class="tav">RI</span><span><b>R. I.</b><span>Director de Operațiuni</span></span>
+            </div>
+          </div>
+        </div>
+        <p class="disclaimer">* Testimoniale demonstrative — de înlocuit cu mărturii reale (cu acordul clienților)
+          înainte de publicare.</p>
+      </div>
+    </section>
+
+    <!-- LEAD MAGNET -->
+    <!-- <section class="section" id="resurse">
+      <div class="wrap">
+        <div class="lead-grid">
+          <div class="blob"
+            style="width:180px;height:180px;background:var(--sun-soft);bottom:-40px;right:-40px;opacity:.6"></div>
+          <div>
+            <p class="kicker">Resursă Strategică Gratuită</p>
+            <h2 style="font-size:clamp(1.5rem,3vw,2.1rem)">Anatomia celor 6 secunde: Ce observă recrutorii prima dată pe
+              CV-ul tău</h2>
+            <p style="margin-top:1rem;color:var(--body-soft)">Un ghid concis care îți dezvăluie mecanismele psihologice
+              din spatele triajului rapid al candidaturilor. Învață cum să eviți eliminarea automată și cum să captezi
+              atenția decidentului instantaneu.</p>
+            <ul>
+              <li><span class="ck">✓</span>Analiza zonelor de interes maxim pe un CV</li>
+              <li><span class="ck">✓</span>Cele 3 erori critice care anulează orice competență</li>
+              <li><span class="ck">✓</span>Sistemul de formulare a realizărilor pentru impact imediat</li>
+            </ul>
+          </div>
+          <form class="form" id="leadForm" novalidate>
+            <div class="field">
+              <label for="lf-name">Cum te cheamă?</label>
+              <input id="lf-name" name="name" type="text" autocomplete="name" placeholder="Prenumele tău" required />
+            </div>
+            <div class="field">
+              <label for="lf-email">Unde îți trimit ghidul?</label>
+              <input id="lf-email" name="email" type="email" autocomplete="email" placeholder="adresa@email.com"
+                required />
+            </div>
+            <button class="btn btn-primary btn-lg" type="submit">Trimite-mi ghidul gratuit</button>
+            <p class="note">Fără spam. Te poți dezabona oricând.</p>
+          </form>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="wrap">
+        <div class="shead" style="margin:0 auto;text-align:center">
+          <p class="kicker">Întrebări frecvente</p>
+          <h2>Ce e bine să știi</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Este eficientă strategia în cazul unei reconversii profesionale radicale? <span
+                class="chev">+</span></summary>
+            <p>Absolut. Pilonul central al metodologiei noastre este reîncadrarea competențelor transferabile. Te
+              învățăm cum să proiectezi experiența ta anterioară astfel încât să devină un atu major în noul domeniu,
+              eliminând percepția de „lipsă de experiență”.</p>
+          </details>
+          <details>
+            <summary>Se adresează programul și profesioniștilor din segmentul de management? <span class="chev">+</span>
+            </summary>
+            <p>Da, majoritatea clienților noștri sunt profesioniști cu experiență medie și seniori sau manageri care
+              urmăresc roluri de leadership. Strategiile de negociere și poziționare sunt adaptate pentru nivelul de
+              complexitate al acestor poziții.</p>
+          </details>
+          <details>
+            <summary>Cum se desfășoară sesiunile de consultanță? <span class="chev">+</span></summary>
+            <p>Interacțiunea are loc exclusiv online, prin platforme securizate de videoconferință. Fiecare sesiune este
+              structurată pe obiective clare și se finalizează cu un plan de acțiune imediată, adaptat ritmului tău
+              profesional.</p>
+          </details>
+          <details>
+            <summary>Cum funcționează concret garanția de performanță? <span class="chev">+</span></summary>
+            <p>Suntem atât de siguri de eficacitatea sistemului încât, dacă după aplicarea riguroasă a tuturor pașilor
+              nu obții rezultate concrete sub formă de interviuri, continuăm să te asistăm pro-bono. Succesul tău este
+              singura noastră unitate de măsură.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section final" id="contact">
+      <div class="wrap">
+        <div class="final-card">
+          <div class="blob" style="width:260px;height:260px;background:rgba(255,255,255,.08);top:-60px;right:-40px">
+          </div>
+          <h2>Primul pas poate fi un simplu mesaj.</h2>
+          <p>Scrie-mi unde te afli acum în căutarea ta. Îți răspund cu un prim pas concret.</p>
+          <div class="cta-row">
+            <a class="btn btn-dark btn-lg" href="mailto:contact@strategiedecariera.ro">Solicită o consultanță</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-inner">
+      <a class="brand" href="#main">
+        <span class="monogram" aria-hidden="true">
+          <img src="andreea.jpg" style="width:100%;height:100%;object-fit:cover;border-radius: 50px;">
+        </span>
+        <span>
+          <b>Andreea Ghiță</b>
+          <span>Perspectiva celui care recrutează</span>
+        </span>
+      </a>
+      <small>&copy;<span id="year"></span> · Consultanță Strategică de Carieră · Servicii Exclusive</small>
     </div>
-  </div>
-</section>
-</main>
+  </footer>
 
-<footer class="foot">
-  <div class="wrap foot-inner">
-    <a class="brand" href="#main">
-      <span class="monogram" aria-hidden="true">
-        <img src="andreea.jpg" style="width:100%;height:100%;object-fit:cover;border-radius: 50px;">
-      </span>
-      <span>
-        <b>Andreea Ghiță</b>
-        <span>Perspectiva celui care recrutează</span>
-      </span>
-    </a>
-    <small>&copy;<span id="year"></span> · Consultanță Strategică de Carieră · Servicii Exclusive</small>
-  </div>
-</footer>
+  <a href="https://wa.me/40720655334?text=Bună%20ziua!%20Te%20contactez%20de%20pe%20site-ul%20Candidatul%20Dorit%20pentru%20mai%20multe%20detalii."
+    class="wa-sticky" target="_blank" aria-label="Contact WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z">
+      </path>
+    </svg>
+  </a>
 
-<a href="https://wa.me/40720655334?text=Bună%20ziua!%20Te%20contactez%20de%20pe%20site-ul%20Candidatul%20Dorit%20pentru%20mai%20multe%20detalii." class="wa-sticky" target="_blank" aria-label="Contact WhatsApp">
-  <svg viewBox="0 0 24 24">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
-  </svg>
-</a>
+  <script>
+    (function () {
+      var nav = document.getElementById('nav');
+      var onScroll = function () { nav.classList.toggle('scrolled', window.scrollY > 8) };
+      window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
 
-<script>
-  (function(){
-    var nav=document.getElementById('nav');
-    var onScroll=function(){nav.classList.toggle('scrolled',window.scrollY>8)};
-    window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+      var menu = document.getElementById('mobileMenu');
+      var openBtn = document.getElementById('menuOpen');
+      var closeBtn = document.getElementById('menuClose');
+      function open() { menu.classList.add('open'); openBtn.setAttribute('aria-expanded', 'true'); document.body.style.overflow = 'hidden'; }
+      function close() { menu.classList.remove('open'); openBtn.setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; }
+      openBtn.addEventListener('click', open);
+      closeBtn.addEventListener('click', close);
+      menu.querySelectorAll('[data-close]').forEach(function (el) { el.addEventListener('click', close); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
 
-    var menu=document.getElementById('mobileMenu');
-    var openBtn=document.getElementById('menuOpen');
-    var closeBtn=document.getElementById('menuClose');
-    function open(){menu.classList.add('open');openBtn.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}
-    function close(){menu.classList.remove('open');openBtn.setAttribute('aria-expanded','false');document.body.style.overflow='';}
-    openBtn.addEventListener('click',open);
-    closeBtn.addEventListener('click',close);
-    menu.querySelectorAll('[data-close]').forEach(function(el){el.addEventListener('click',close);});
-    document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+      var form = document.getElementById('leadForm');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var btn = form.querySelector('button[type=submit]');
+        btn.textContent = 'Gata! Verifică-ți emailul ✓';
+        btn.style.background = 'var(--sage-deep)';
+        btn.disabled = true;
+      });
 
-    var form=document.getElementById('leadForm');
-    form.addEventListener('submit',function(e){
-      e.preventDefault();
-      var btn=form.querySelector('button[type=submit]');
-      btn.textContent='Gata! Verifică-ți emailul ✓';
-      btn.style.background='var(--sage-deep)';
-      btn.disabled=true;
-    });
-
-    var y=document.getElementById('year');if(y)y.textContent=new Date().getFullYear();
-  })();
-</script>
+      var y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
+
 </html>
